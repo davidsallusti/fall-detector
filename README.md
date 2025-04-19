@@ -1,37 +1,19 @@
 # Fall Detection Cloud App
 
-This is a cloud-ready fall detection system that supports:
+This is a deployable Streamlit app for real-time fall detection using RTSP cameras and Roboflow integration.
 
-✅ Real-time camera stream input  
-✅ Roboflow object detection integration  
-✅ Webhook alert system  
-✅ Streamlit UI  
-✅ Cloud settings saved to file  
-
-## Setup & Run
-
-### Requirements
-- Python 3.9+
-- Streamlit
-- Roboflow API key
-- Optional: RTSP-compatible camera
-
-### Run Locally
+## How to Run
 
 ```bash
 pip install -r requirements.txt
 streamlit run app/app.py
 ```
 
-### Xano Integration
+## Features
 
-To connect to Xano:
-1. Set up a Xano workspace with `auth` and `settings` tables.
-2. Replace `settings.json` logic with API calls:
-    - POST `/auth/login` and `/auth/signup`
-    - GET/POST `/settings`
+- RTSP stream or local video
+- Roboflow prediction
+- Webhook alerting
+- Settings saved to JSON
 
-### Deployment
-
-Use [Streamlit Community Cloud](https://streamlit.io/cloud) for free and easy deployment.
-Just upload the project and set up required secrets.
+You can deploy this to Streamlit Cloud or host via Docker.
