@@ -44,10 +44,10 @@ VIDEO_PATH = "data/pool_fall_video.mp4"
 
 # === Initialize Roboflow ===
 rf = Roboflow(api_key=stored_api_key)
-project = rf.workspace("fall-ql73x").project("falling-dii3i")
+project = rf.workspace("fall-ql73x").project("falling-vbtmk")
 st.success("✅ Roboflow project loaded.")
 
-model = project.version(7).model
+model = project.version(2).model
 if model is None:
     st.error("❌ Model not loaded. Check version or training status.")
     st.stop()
